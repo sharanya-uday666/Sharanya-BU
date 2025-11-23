@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume & Bio-Data - Sharanya</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        hr {
+            border: 1px solid #ddd;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #666;
+            object-fit: cover;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            border: 1px solid #999;
+            padding: 10px;
+        }
+        table th {
+            background: #ddd;
+            text-align: left;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        .fade {
+            display: none;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resume & Bio-DATA</h1>
+    <hr>
+
+    <!-- Profile Image -->
+    <div class="profile">
+        <img src="c:\Users\Admin\OneDrive\ドキュメント\web photo.jpeg" alt="Profile Photo">
+        <h2>Sharanya B U</h2>
+    </div>
+
+    <!-- Buttons -->
+    <div style="text-align:center;">
+        <button class="btn" onclick="$('#resume').fadeToggle()">Show / Hide Resume</button>
+        <button class="btn" onclick="$('#biodata').fadeToggle()">Show / Hide Bio-Data</button>
+    </div>
+
+    <!-- Resume Section -->
+    <div id="resume" class="section fade">
+        <h2>RESUME</h2>
+        <hr>
+
+        <h3>Career Objective</h3>
+        <p>To obtain a responsible position that allows me to apply my skills and contribute to organizational growth.</p>
+
+        <h3>Educational Qualification</h3>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Institution</th>
+                <th>Year Of Passing</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>BE</td>
+                <td>JSSATEB College</td>
+                <td>2027</td>
+                <td>Purusing</td>
+            </tr>
+            <tr>
+                <td>PUC</td>
+                <td>STG College</td>
+                <td>2023</td>
+                <td>87%</td>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>PVK School</td>
+                <td>2021</td>
+                <td>70%</td>
+            </tr>
+        </table>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>C, Java, Python</li>
+            <li>Database: MySQL</li>
+        </ul>
+
+        <h3>Certifications (Infosys Springboard)</h3>
+        <ul>
+            <li>Artificial Intelligence (AI)</li>
+            <li>Database Management Systems (DBMS)</li>
+            <li>Theory of Computation (TOC)</li>
+            <li>Java Programming</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Music</li>
+            <li>Drawing</li>
+            <li>Dancing</li>
+        </ul>
+    </div>
+
+    <!-- Bio-data Section -->
+    <div id="biodata" class="section fade">
+        <h2>BIO-DATA</h2>
+        <hr>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Sharanya B U</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>28-08-2004</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td>Indian</td>
+            </tr>
+            <tr>
+                <th>Languages Known</th>
+                <td>English, Kannada, Hindi</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Bangalore, Karnataka</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>+91 8792368118</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>gowdasharanya641@example.com</td>
+            </tr>
+            <tr>
+                <th>LinkedIn Profile</th>
+                <td>
+                    <a href="https://www.linkedin.com/in/sharanya-b-u" target="_blank">
+                        Sharanya B U – LinkedIn
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Declaration</h3>
+        <p>I hereby declare that all the above information is true to the best of my knowledge.</p>
+    </div>
+
+</div>
+
+<script>
+    // Show resume by default
+    $(document).ready(function() {
+        $("#resume").fadeIn(1000);
+    });
+</script>
+
+</body>
+</html>
